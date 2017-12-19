@@ -93,5 +93,5 @@ RUN set -ex; \
 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) \
 		\) -exec rm -rf '{}' +; \
 	rm -f get-pip.py
-
+RUN pip3 install awscli
 CMD ["python3"]
